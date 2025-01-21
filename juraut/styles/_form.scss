@@ -1,0 +1,150 @@
+.calculator {
+  &__form-wrapper {
+    width: 100%;
+    margin-top: 40px;
+
+    @include on-desktop {
+      width: 488px;
+      height: 901px;
+
+      margin-left: 50px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    &-title-wrapper {
+      width: 100%;
+      height: 50px;
+      background-color: #E0E2E4;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+
+      
+    }
+
+    &-line-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+    }
+
+    &-line-text {
+      font-weight: 400;
+      font-size: 13px;
+      color: #767676;
+    }
+
+    &-line {
+      width: 100%;
+      height: 24px;
+      background-color: #FF5A2D;
+      border-radius: 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFF;
+    }
+
+    &-label-wrapper {
+      border-bottom: 1px solid #CCCCCC;
+
+      .label-1 {
+        margin-top: 36px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+      }
+    }
+
+    &-label {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+
+      font-weight: 700;
+    }
+
+    .label-2 {
+      margin-top: 28px;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 98%;
+
+      outline: none;
+      border: none;
+
+      background-color: #E0E2E4;
+      padding: 15px 12px;
+      border-radius: 7px;
+
+      color: #6E777B;
+
+      &:hover {
+        cursor: pointer;
+      }
+      
+      option {
+        width: 200px;
+      }
+    }
+
+    input {
+      outline: none;
+      border: 1px solid #E0E2E4;
+      width: 97%;
+      height: 42px;
+
+      background-color: #FFF;
+      border-radius: 7px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 48px;
+      border-radius: 27px;
+      background-color: #FF5A2D;
+      border: none;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: #FFF;
+      font-weight: 400;
+      font-size: 13;
+
+      margin-top: 24px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
